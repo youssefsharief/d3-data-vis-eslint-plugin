@@ -1,0 +1,26 @@
+{
+  "name": "eslint-plugin-d3",
+  "version": "1.1.0",
+  "description": "D3.js linter",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "Youssef Mohamed Sherif",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "mocha --reporter dot tests/"
+  },
+  "peerDependencies": {
+    "eslint": ">=5.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "mocha": "^6.1.4",
+    "prettier": "^1.18.2"
+  }
+}
