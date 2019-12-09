@@ -4,9 +4,7 @@
     "node": true,
     "es6": true
   },
-  "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": "error",
     "camelcase": "error",
     "eqeqeq": ["error", "smart"],
     "no-implicit-globals": "error",
