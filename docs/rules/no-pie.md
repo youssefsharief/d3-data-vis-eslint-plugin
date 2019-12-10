@@ -14,9 +14,11 @@ description: Do not use pie charts
 
 - [no-pie]
 
-[no-pie]: https://eslint.org/docs/rules/no-pie
+[The issue with pie chart]: https://www.data-to-viz.com/caveat/pie.html
+[Pie charts are bad]: https://www.stevefenton.co.uk/2009/04/pie-charts-are-bad/ 
+[Pie charts are the worst]: https://www.stevefenton.co.uk/2009/04/pie-charts-are-bad/ 
 
 ## :mag: Implementation
 
-- [Rule source](https://github.com/youssefsharief/d3-data-vis-eslint-plugin/blob/master/lib/rules/no-pie.js)
-- [Test source](https://github.com/youssefsharief/d3-data-vis-eslint-plugin/blob/master/tests/lib/rules/no-pie.js)
+- [Rule source](https://github.com/youssefsharief/d3-data-vis-eslint-plugin/blob/master/rules/no-pie.js)
+- [Test source](https://github.com/youssefsharief/d3-data-vis-eslint-plugin/blob/master/tests/no-pie.js)
