@@ -17,7 +17,7 @@ module.exports = {
           case 'pie':
             context.report({
               node: node,
-              message: "Don't use a pie chart"
+              message: "Don't use a pie chart. Read more here. https://eslint-plugin-d3.now.sh/rules/#d3-no-pie"
             })
         }
       }
