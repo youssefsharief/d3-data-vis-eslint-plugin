@@ -9,4 +9,4 @@ npm run docs:build
 # navigate into the build output directory
 cd docs/.vuepress/dist
 
-now -n eslint-plugin-d3
+now -n eslint-plugin-d3 --prod
