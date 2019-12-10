@@ -8,7 +8,7 @@
 
 ## :book: Documentation
 
-See [the official website](https://eslint-plugin-d3-plugin.youssefsharief.now.sh).
+See [the official website](https://eslint-plugin-d3.now.sh).
 
 ## :anchor: Versioning Policy
 
@@ -22,7 +22,7 @@ This project uses [GitHub Releases](https://github.com/youssefsharief/d3-data-vi
 
 Contribution is welcome!
 
-See [The ESLint D3 Plugin Developer Guide](https://eslint-plugin-d3.youssefsharief.now.sh/developer-guide/).
+See [The ESLint D3 Plugin Developer Guide](https://eslint-plugin-d3.now.sh/developer-guide/).
 
 ### Working with Rules
 
