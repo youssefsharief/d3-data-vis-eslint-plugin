@@ -8,7 +8,7 @@
 
 ## :book: Documentation
 
-See [the official website](https://eslint.vuejs.org).
+See [the official website](https://dist.youssefsharief.now.sh).
 
 ## :anchor: Versioning Policy
 

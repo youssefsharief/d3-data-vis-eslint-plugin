@@ -5,7 +5,7 @@
 'use strict'
 
 module.exports = {
-  base: '/d3-data-vis-eslint-plugin/',
+  base: '/',
   title: 'eslint-plugin-d3',
   description: 'ESLint plugin for D3.js',
   serviceWorker: true,
