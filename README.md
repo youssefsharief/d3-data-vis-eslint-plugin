@@ -18,7 +18,7 @@ This plugin is following [Semantic Versioning](https://semver.org/) and [ESLint'
 
 This project uses [GitHub Releases](https://github.com/youssefsharief/d3-data-vis-eslint-plugin/releases).
 
-## :beers: Contribution Guide
+## Contribution Guide
 
 Contribution is welcome!
 
