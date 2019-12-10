@@ -3,7 +3,7 @@
 const rule = require('../rules/no-pie')
 const RuleTester = require('eslint').RuleTester
 
-const pieChartError = "Don't use a pie chart"
+const pieChartError = "Don't use a pie chart. Read more here. https://eslint-plugin-d3.now.sh/rules/#d3-no-pie"
 
 const ruleTester = new RuleTester()
 ruleTester.run('no-ajax', rule, {
