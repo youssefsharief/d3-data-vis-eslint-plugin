@@ -1,14 +1,14 @@
-# eslint-plugin-vue
+# eslint-plugin-d3
 
 [![NPM version](https://img.shields.io/npm/v/eslint-plugin-d3.svg?style=flat)](https://npmjs.org/package/eslint-plugin-d3)
 [![NPM downloads](https://img.shields.io/npm/dm/eslint-plugin-d3.svg?style=flat)](https://npmjs.org/package/eslint-plugin-d3)
-[![License](https://img.shields.io/github/license/youssefsharief/eslint-plugin-vue.svg?style=flat)](https://github.com/vuejs/eslint-plugin-vue/blob/master/LICENSE.md)
+[![License](https://img.shields.io/github/license/youssefsharief/eslint-plugin-vue.svg?style=flat)](https://github.com/youssefsharief/d3-data-vis-eslint-plugin/blob/master/LICENSE)
 
 > ESLint plugin for D3.js
 
 ## :book: Documentation
 
-See [the official website](https://dist.youssefsharief.now.sh).
+See [the official website](https://d3-data-vis-eslint-plugin.youssefsharief.now.sh).
 
 ## :anchor: Versioning Policy
 
@@ -22,25 +22,17 @@ This project uses [GitHub Releases](https://github.com/youssefsharief/d3-data-vi
 
 Contribution is welcome!
 
-See [The ESLint Vue Plugin Developer Guide](https://eslint.vuejs.org/developer-guide/).
+See [The ESLint D3 Plugin Developer Guide](https://d3-data-vis-eslint-plugin.youssefsharief.now.sh/developer-guide/).
 
 ### Working with Rules
 
 Before you start writing a new rule, please read [the official ESLint guide](https://eslint.org/docs/developer-guide/working-with-rules).
 
 Next, in order to get an idea how does the AST of the code that you want to check looks like, use one of the following applications:
-- [astexplorer.net](https://astexplorer.net/) - the best tool to inspect ASTs, but it doesn't support Vue template yet
-- [ast.js.org](https://ast.js.org/) - not fully featured, but supports Vue template syntax
-
-Since single file components in Vue are not plain JavaScript, the default parser couldn't be used, so a new one was introduced. `vue-eslint-parser` generates enhanced AST with nodes that represent specific parts of the template syntax, as well as what's inside the `<script>` tag.
+- [astexplorer.net](https://astexplorer.net/) - the best tool to inspect ASTs
 
 To know more about certain nodes in produced ASTs, go here:
 - [ESTree docs](https://github.com/estree/estree)
-- [vue-eslint-parser AST docs](https://github.com/mysticatea/vue-eslint-parser/blob/master/docs/ast.md)
-
-The `vue-eslint-parser` provides a few useful parser services that help traverse the produced AST and access tokens of the template:
-- `context.parserServices.defineTemplateBodyVisitor(visitor, scriptVisitor)`
-- `context.parserServices.getTemplateBodyTokenStore()`
 
 Check out [an example rule](https://github.com/vuejs/eslint-plugin-vue/blob/master/lib/rules/mustache-interpolation-spacing.js) to get a better understanding of how these work.
 
