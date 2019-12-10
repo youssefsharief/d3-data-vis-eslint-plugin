@@ -18,9 +18,9 @@ Enforce all the rules with:
 
 ### :books: Further reading
 
-[The issue with pie chart]: https://www.data-to-viz.com/caveat/pie.html
-[Pie charts are bad]: https://www.stevefenton.co.uk/2009/04/pie-charts-are-bad/ 
-[Pie charts are the worst]: https://www.stevefenton.co.uk/2009/04/pie-charts-are-bad/ 
+- [The issue with pie chart](https://www.data-to-viz.com/caveat/pie.html)
+- [Pie charts are bad](https://www.stevefenton.co.uk/2009/04/pie-charts-are-bad)
+- [Pie charts are the worst](https://www.stevefenton.co.uk/2009/04/pie-charts-are-bad)
 
 ### :mag: Implementation
 
