@@ -1,58 +1,53 @@
-# eslint-plugin-d3
+# eslint-plugin-vue
 
-Disallow d3 functions with native equivalents.
+[![NPM version](https://img.shields.io/npm/v/eslint-plugin-d3.svg?style=flat)](https://npmjs.org/package/eslint-plugin-d3)
+[![NPM downloads](https://img.shields.io/npm/dm/eslint-plugin-d3.svg?style=flat)](https://npmjs.org/package/eslint-plugin-d3)
+[![License](https://img.shields.io/github/license/youssefsharief/eslint-plugin-vue.svg?style=flat)](https://github.com/vuejs/eslint-plugin-vue/blob/master/LICENSE.md)
 
-## Installation
+> ESLint plugin for D3.js
 
-You'll first need to install [ESLint](http://eslint.org):
+## :book: Documentation
 
-```
-$ npm install eslint --save-dev
-```
+See [the official website](https://eslint.vuejs.org).
 
-Next, install `eslint-plugin-d3`:
+## :anchor: Versioning Policy
 
-```
-$ npm install eslint-plugin-d3 --save-dev
-```
+This plugin is following [Semantic Versioning](https://semver.org/) and [ESLint's Semantic Versioning Policy](https://github.com/eslint/eslint#semantic-versioning-policy).
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-d3` globally.
+## :newspaper: Changelog
 
-## Usage
+This project uses [GitHub Releases](https://github.com/youssefsharief/d3-data-vis-eslint-plugin/releases).
 
-Add `d3` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix.
+## :beers: Contribution Guide
 
-You can either enable individual rules as follows:
-```json
-{
-  "plugins": [
-    "d3"
-  ],
-  "rules": {
-    "d3/no-pie": 2,
-  }
-}
-```
+Contribution is welcome!
 
-Or you can use the full set of rules:
-```json
-{
-  "plugins": [
-    "d3"
-  ],
-  "extends": [
-    "plugin:d3/recommended"
-  ]
-}
-```
+See [The ESLint Vue Plugin Developer Guide](https://eslint.vuejs.org/developer-guide/).
 
-## Development
+### Working with Rules
 
-```
-npm install
-npm test
-```
+Before you start writing a new rule, please read [the official ESLint guide](https://eslint.org/docs/developer-guide/working-with-rules).
 
-## License
+Next, in order to get an idea how does the AST of the code that you want to check looks like, use one of the following applications:
+- [astexplorer.net](https://astexplorer.net/) - the best tool to inspect ASTs, but it doesn't support Vue template yet
+- [ast.js.org](https://ast.js.org/) - not fully featured, but supports Vue template syntax
 
-Distributed under the MIT license. See LICENSE for details.
+Since single file components in Vue are not plain JavaScript, the default parser couldn't be used, so a new one was introduced. `vue-eslint-parser` generates enhanced AST with nodes that represent specific parts of the template syntax, as well as what's inside the `<script>` tag.
+
+To know more about certain nodes in produced ASTs, go here:
+- [ESTree docs](https://github.com/estree/estree)
+- [vue-eslint-parser AST docs](https://github.com/mysticatea/vue-eslint-parser/blob/master/docs/ast.md)
+
+The `vue-eslint-parser` provides a few useful parser services that help traverse the produced AST and access tokens of the template:
+- `context.parserServices.defineTemplateBodyVisitor(visitor, scriptVisitor)`
+- `context.parserServices.getTemplateBodyTokenStore()`
+
+Check out [an example rule](https://github.com/vuejs/eslint-plugin-vue/blob/master/lib/rules/mustache-interpolation-spacing.js) to get a better understanding of how these work.
+
+Please be aware that regarding what kind of code examples you'll write in tests, you'll have to accordingly set up the parser in `RuleTester` (you can do it on a per test case basis). See an example [here](https://github.com/vuejs/eslint-plugin-vue/blob/master/tests/lib/rules/attribute-hyphenation.js#L19).
+
+If you'll stuck, remember there are plenty of rules you can learn from already. If you can't find the right solution, don't hesitate to reach out in [issues](https://github.com/vuejs/eslint-plugin-vue/issues) – we're happy to help!
+
+## :lock: License
+
+See the [LICENSE](LICENSE) file for license rights and limitations (MIT).

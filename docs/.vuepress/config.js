@@ -27,7 +27,6 @@ module.exports = {
       { text: 'User Guide', link: '/user-guide/' },
       { text: 'Developer Guide', link: '/developer-guide/' },
       { text: 'Rules', link: '/rules/' },
-      { text: 'Guide', link: '/guide/' },
     ],
 
     sidebar: 'auto'
