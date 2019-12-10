@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/eslint-plugin-d3.svg?style=flat)](https://npmjs.org/package/eslint-plugin-d3)
 [![NPM downloads](https://img.shields.io/npm/dm/eslint-plugin-d3.svg?style=flat)](https://npmjs.org/package/eslint-plugin-d3)
-[![License](https://img.shields.io/github/license/youssefsharief/eslint-plugin-vue.svg?style=flat)](https://github.com/youssefsharief/d3-data-vis-eslint-plugin/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/youssefsharief/d3-data-vis-eslint-plugin.svg?style=flat)](https://github.com/youssefsharief/d3-data-vis-eslint-plugin/blob/master/LICENSE)
 
 > ESLint plugin for D3.js
 
@@ -34,11 +34,11 @@ Next, in order to get an idea how does the AST of the code that you want to chec
 To know more about certain nodes in produced ASTs, go here:
 - [ESTree docs](https://github.com/estree/estree)
 
-Check out [an example rule](https://github.com/vuejs/eslint-plugin-vue/blob/master/lib/rules/mustache-interpolation-spacing.js) to get a better understanding of how these work.
+Check out [an example rule](https://github.com/youssefsharief/d3-data-vis-eslint-plugin/blob/master/rules/no-pie.js) to get a better understanding of how these work.
 
-Please be aware that regarding what kind of code examples you'll write in tests, you'll have to accordingly set up the parser in `RuleTester` (you can do it on a per test case basis). See an example [here](https://github.com/vuejs/eslint-plugin-vue/blob/master/tests/lib/rules/attribute-hyphenation.js#L19).
+Please be aware that regarding what kind of code examples you'll write in tests, you'll have to accordingly set up the parser in `RuleTester` (you can do it on a per test case basis). See an example [here](https://github.com/youssefsharief/d3-data-vis-eslint-plugin/blob/master/tests/no-pie.js).
 
-If you'll stuck, remember there are plenty of rules you can learn from already. If you can't find the right solution, don't hesitate to reach out in [issues](https://github.com/vuejs/eslint-plugin-vue/issues) – we're happy to help!
+If you'll stuck, remember there are plenty of rules you can learn from already. If you can't find the right solution, don't hesitate to reach out in [issues](https://github.com/youssefsharief/d3-data-vis-eslint-plugin/issues) – we're happy to help!
 
 ## :lock: License
 
